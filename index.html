@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS Only</title>
+    <meta name="description" content="Basic HTML boilerplate" />
+    <meta name="author" content="Daily Dev Tips" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body style="background-color: grey">
+    <div class="body-ss">
+      <div class="screen-ss"></div>
+      <div class="volume-button"></div>
+      <div class="bixby-button"></div>
+      <div class="power-button"></div>
+      <div class="speaker"></div>
+      <div class="camera"></div>
+    </div>
+  </body>
+
+  <style>
+    .body {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      background-color: black;
+      height: 147.7mm;
+      width: 68.7mm;
+      border-radius: 6.893mm;
+      position: relative;
+    }
+
+    .body-ss {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      background-color: black;
+      height: 147.7mm;
+      width: 66.7mm;
+      border-radius: 6.893mm;
+      position: relative;
+      box-shadow: inset 1px 0px 5px -1px #fff, inset -1px 0px 10px -1px #fff;
+    }
+
+    .screen {
+      position: absolute;
+      top: 8.18mm;
+      bottom: 6.96mm;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: grey;
+      height: 132.39mm;
+      width: 66.314mm;
+      border-radius: 6.893mm;
+      background-image: url("./ajrspace.png");
+      background-position: -85px;
+      background-size: cover;
+    }
+
+    .screen-ss {
+      position: absolute;
+      top: 8.18mm;
+      bottom: 6.96mm;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: grey;
+      height: 132.39mm;
+      width: 64.314mm;
+      border-radius: 6.893mm;
+      background-image: url("./ss.jpg");
+      /*background-position: -85px;*/
+      background-size: contain;
+    }
+
+    .volume-button {
+      position: absolute;
+      background-color: black;
+      top: 22mm;
+      left: 0%;
+      transform: translateX(-100%);
+      height: 21mm;
+      width: 0.7mm;
+      border-radius: 10px 0 0 10px;
+    }
+
+    .bixby-button {
+      position: absolute;
+      background-color: black;
+      top: 50mm;
+      left: 0%;
+      transform: translateX(-100%);
+      height: 13mm;
+      width: 0.7mm;
+      border-radius: 10px 0 0 10px;
+    }
+
+    .power-button {
+      position: absolute;
+      background-color: black;
+      top: 41mm;
+      left: 100%;
+      transform: translateX(0%);
+      height: 13mm;
+      width: 0.7mm;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .speaker {
+      position: absolute;
+      background-color: #1e1e1e;
+      width: 10mm;
+      height: 1mm;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 4mm;
+      border-radius: 10px;
+    }
+
+    .camera {
+      position: absolute;
+      background-color: #0f1820;
+      height: 3mm;
+      width: 3mm;
+      border-radius: 100%;
+      top: 3mm;
+      left: 49mm;
+    }
+  </style>
+</html>
